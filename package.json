@@ -1,0 +1,25 @@
+{
+  "name": "friend_finder",
+  "version": "1.0.0",
+  "description": "A Express and Node Friend Finder Application",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fysics7/Friend-Finder.git"
+  },
+  "author": "Jeffrey Mills",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fysics7/Friend-Finder/issues"
+  },
+  "homepage": "https://github.com/Fysics7/Friend-Finder#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "path": "^0.12.7"
+  }
+}

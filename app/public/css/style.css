@@ -1,0 +1,74 @@
+/* general */
+
+body {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-image: url('../images/whitediamond.png')
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+/* page content */
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+    padding: 2em 15em 2em 15em;
+}
+
+.wrapper>* {
+    flex: 1 100%;
+}
+
+.main {
+    text-align: left;
+    background: #fff;
+    max-height: 70vh;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #2e0c72;
+}
+.contentWrapper {
+    padding: 1em 2em 1em 2em;
+    overflow: scroll;
+    max-height: 65vh;
+}
+
+/* form */
+
+ul.dropdown-content.select-dropdown li span {
+    color: #8bb1f9;
+}
+
+.input-field label {
+    color: #000;
+}
+
+.input-field input[type=text].valid {
+    border-bottom: 1px solid #8bb1f9;
+    box-shadow: 0 1px 0 0 #8bb1f9;
+}
+
+.input-field .prefix.active {
+    color: #8bb1f9;
+}
+
+.input-field input:focus {
+    color: #8bb1f9;
+    border-bottom: 1px solid #8bb1f9 !important;
+    box-shadow: 0 0px 0 0 #000 !important;
+}
+
+.input-field input[type=text]:focus+label {
+    color: #8bb1f9 !important;
+}
+
+#submitButton {
+    margin-top: 3em;
+}

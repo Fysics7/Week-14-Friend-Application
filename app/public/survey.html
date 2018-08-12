@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Friend Finder</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- local stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- navigation -->
+        <nav>
+            <div class="nav-wrapper blue darken-4">
+                <a href="./home.html" class="brand-logo center">Friend Finder</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/survey">Survey</a>
+                    </li>
+                    <li>
+                        <a href="/api/friends" target="_blank">API</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/comptech81/friend-finder" target="_blank">Github</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="wrapper">
+            <div class="main">
+                <form class="col s12">
+                    <div class="heading blue darken-4 white-text center">Survey</div>
+                    <div class="contentWrapper">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                            <label for="first_name">First Name</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix"></i>
+                            <input placeholder="Placeholder" id="last_name" type="text" class="validate">
+                            <label for="last_name">Last Name</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">image</i>
+                            <input placeholder="Placeholder" id="picture" type="text" class="validate">
+                            <label for="picture">Picture URL</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <h4>My idea of a good time is hanging out at home and playing video games.</h4>
+                            <select id="q1" class="validateSelect" data-placeholder="">
+                                <option value="">Choose your option</option>
+                                <option value="1">1 (Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Agree)</option>
+                            </select>
+                            <label></label>
+                        </div>
+                        <div class="input-field col s12">
+                            <h4>My idea of a good time is getting outdoors and enjoying nature.</h4>
+                            <select id="q2" class="validateSelect" data-placeholder="">
+                                <option value="">Choose your option</option>
+                                <option value="1">1 (Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Agree)</option>
+                            </select>
+                            <label></label>
+                        </div>
+                        <div class="input-field col s12">
+                            <h4>My idea of a good time is catching a good movie with friends.</h4>
+                            <select id="q3" class="validateSelect" data-placeholder="">
+                                <option value="">Choose your option</option>
+                                <option value="1">1 (Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Agree)</option>
+                            </select>
+                            <label></label>
+                        </div>
+                        <div class="input-field col s12">
+                            <h4>My idea of a good time is going out to a nightclub with friends.</h4>
+                            <select id="q4" class="validateSelect" data-placeholder="">
+                                <option value="">Choose your option</option>
+                                <option value="1">1 (Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Agree)</option>
+                            </select>
+                            <label></label>
+                        </div>
+                        <div class="input-field col s12">
+                            <h4>I prefer to eat healthy! where is the Spinach and Kale?</h4>
+                            <select id="q5" class="validateSelect" data-placeholder="">
+                                <option value="">Choose your option</option>
+                                <option value="1">1 (Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Agree)</option>
+                            </select>
+                            <label></label>
+                        </div>
+                        <div class="input-field col s12">
+                            <h4>I'm not concerned about what I eat as long as it tastes good! Where are those Garlic Fries?</h4>
+                            <select id="q6" class="validateSelect" data-placeholder="">
+                                <option value="">Choose your option</option>
+                                <option value="1">1 (Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Agree)</option>
+                            </select>
+                            <label></label>
+                        </div>
+                        <div class="input-field col s12">
+                            <h4>My favorite movie genre is science fiction. "Full Warp Speed!"</h4>
+                            <select id="q7" class="validateSelect" data-placeholder="">
+                                <option value="">Choose your option</option>
+                                <option value="1">1 (Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Agree)</option>
+                            </select>
+                            <label></label>
+                        </div>
+                        <div class="input-field col s12">
+                            <h4>My favorite movie genre is action. "Explosions and more explosions!"</h4>
+                            <select id="q8" class="validateSelect" data-placeholder="">
+                                <option value="">Choose your option</option>
+                                <option value="1">1 (Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Agree)</option>
+                            </select>
+                            <label></label>
+                        </div>
+                        <div class="input-field col s12">
+                            <h4>My favorite movie genre is comedy. "My tummy hurts from laughing so hard!"</h4>
+                            <select id="q9" class="validateSelect" data-placeholder="">
+                                <option value="">Choose your option</option>
+                                <option value="1">1 (Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Agree)</option>
+                            </select>
+                            <label></label>
+                        </div>
+                        <div class="input-field col s12">
+                            <h4>My favorite movie genre is drama. "Nope, I am not going to cry!"</h4>
+                            <select id="q10" class="validateSelect">
+                                <option value="">Choose your option</option>
+                                <option value="1">1 (Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Agree)</option>
+                            </select>
+                            <label></label>
+                        </div>
+                        <div class="center">
+                            <button id="submitButton" class="btn blue darken-4 white-text waves-effect waves-light" type="submit" name="action">Submit
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer blue accent-1">
+        <div class="footer-copyright blue darken-4 center">
+            <div class="container white-text">
+                © 2018 Copyright James Hartley
+            </div>
+        </div>
+    </footer>
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Here is your closest match!</h4>
+            <div class="divider"></div>
+            <h5 id="matchName"></h5>
+            <img id="matchPicture" class="materialboxed" width="650" src="">
+        </div>
+        <div class="modal-footer">
+            <a href="/survey" class="modal-action modal-close waves-effect waves-light btn-flat">Start Over</a>
+        </div>
+    </div>
+    <!-- Link to the jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Compiled and minified Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>
